@@ -3,6 +3,6 @@ LABEL Maintainer=wangpx
 WORKDIR /app
 EXPOSE 8080
 COPY target/my-app-1.0-SNAPSHOT.jar /app/my-app.jar
-RUN chown app:app /app/acceptcus.jar
+RUN chown app:app /app/my-app.jar
 USER app
 CMD ["java", "-jar", "/app/my-app.jar"]
