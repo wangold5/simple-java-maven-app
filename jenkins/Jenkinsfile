@@ -20,5 +20,10 @@ pipeline {
                 }
             }
         }
+        stage('build') {
+            steps {
+                sh 'docker build -t java:demo -f jenkins/dockerfile .'
+            }
+        }
     }
 }
