@@ -60,7 +60,7 @@ spec:
   - port: 80
     protocol: TCP
     targetPort: 8080
-    nodePort: 31063
+    nodePort: 31064
   selector:
     app: java-demo
   type: NodePort
